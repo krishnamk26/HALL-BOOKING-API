@@ -3,7 +3,7 @@ const app =express();
 app.use(express.json());
 const { response } = require('express');
 
-const port =process.env.PORT||8000;
+const port =8000;
 
 
 
