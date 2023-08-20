@@ -3,7 +3,7 @@ const app =express();
 app.use(express.json());
 const { response } = require('express');
 
-const PORT =process.env.PORT||8000;
+const port =process.env.PORT||8000;
 
 
 
@@ -149,4 +149,4 @@ app.get('/book/custom',(request,response)=>{
     )
 })
 
-app.listen(PORT,()=>console.log("server has started at:",PORT));
+app.listen(port,()=>console.log(`server has started at: ${port}`));
